@@ -2,6 +2,10 @@
 # General
 --------------------------------------------------------------*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   color: #666666;
@@ -130,8 +134,8 @@ h6 {
 
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
-  padding: 20px 0;
-  height: 72px;
+  padding: 10px 0;
+  height: 85px;
   transition: all 0.5s;
 }
 
@@ -1093,7 +1097,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-logo-img {
   margin: 0px;
-  width: 60%;
   height: 60%;
 }
 

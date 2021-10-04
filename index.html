@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style type="text/css" id="dark-mode-custom-style" lang="en"></style><style type="text/css" id="dark-mode-native-style" lang="en"></style><head>
+<html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <title>ARAH Akakia Teknologi</title>
@@ -8,8 +8,8 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="ARAH_Akakia_Teknologi_files/favicon.png" rel="icon">
-  <link href="http://127.0.0.1:8000/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="http://localhost:8000/img/favicon.png" rel="icon">
+  <link href="http://localhost:8000/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="ARAH_Akakia_Teknologi_files/css.css" rel="stylesheet">
@@ -33,11 +33,11 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header" class="header-scrolled">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-      <h1><a href="#intro" class="scrollto"><img src="img/AAT/logo_AAT_header.png" alt=""> ARAH Akakia Teknologi</a></h1>
+      <h1><a href="#intro" class="scrollto"><img src="img/AAT/logo-aat-header.png" alt=""> ARAH Akakia Teknologi</a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -45,8 +45,10 @@
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a>
-          </li><li><a href="#contact">Contact Us</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Terstimonials</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </div>
@@ -71,7 +73,7 @@
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
-        <ol class="carousel-indicators"><li data-target="#introCarousel" data-slide-to="0" class=""></li><li data-target="#introCarousel" data-slide-to="1" class=""></li><li data-target="#introCarousel" data-slide-to="2" class=""></li><li data-target="#introCarousel" data-slide-to="3" class="active"></li><li data-target="#introCarousel" data-slide-to="4"></li></ol>
+        <ol class="carousel-indicators"><li data-target="#introCarousel" data-slide-to="0" class=""></li><li data-target="#introCarousel" data-slide-to="1" class="active"></li><li data-target="#introCarousel" data-slide-to="2" class=""></li></ol>
 
         <div class="carousel-inner" role="listbox">
 
@@ -81,18 +83,18 @@
               <div class="carousel-content">
                
                 <p>ARAH Akakia Teknologi adalah perusahaan yang mengakar dan berorientasi pada teknologi yang inovatif.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <a href="#contact" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url('img/intro-carousel/2.jpg');">
+          <div class="carousel-item active" style="background-image: url('img/intro-carousel/2.jpg');">
             
             <div class="carousel-container">
               <div class="carousel-content">
                 
                 <p>Kami membawa manfaat bagi semua lapisan masyarakat baik dari perusahaan, end user maupun investor.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <a href="#contact" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
           </div>
@@ -103,29 +105,7 @@
               <div class="carousel-content">
               
                 <p>Kami menciptakan sistem blok yang memberikan saran berdasarkan data yang dianalisa.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item active" style="background-image: url('img/intro-carousel/4.jpg');">
-            
-            <div class="carousel-container">
-              <div class="carousel-content">
-
-                <p>ARAH Akakia Teknologi adalah perusahaan yang mengakar dan berorientasi pada teknologi yang inovatif.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url('img/intro-carousel/5.jpg');">
-            
-            <div class="carousel-container">
-              <div class="carousel-content">
-
-                <p>Kami membawa manfaat bagi semua lapisan masyarakat baik dari perusahaan, end user maupun investor.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <a href="#contact" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
           </div>
@@ -197,15 +177,17 @@ amet Lorem ipsum dolor sit amet</p>
 
         <header class="section-header">
           <h3>About Us</h3>
-          <p>Perusahaan yang berbasis teknologi......</p>
+          <p>Perusahaan yang berbasis teknologi yang mengakar dan 
+berkembang ke arah teknologi yang inovatif dan bermanfaat bagi segala 
+kalangan masyarakat</p>
         </header>
 
         <div class="row about-cols">
 
-          <div class="col-md-4 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+          <div class="col-md-4 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
             <div class="about-col">
               <div class="img">
-                <img src="ARAH_Akakia_Teknologi_files/2.jpg" alt="" class="img-fluid">
+                <img src="img/2.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Mision</a></h2>
@@ -215,7 +197,7 @@ amet Lorem ipsum dolor sit amet</p>
             </div>
           </div>
 
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
             <div class="about-col">
               <div class="img">
                 <img src="ARAH_Akakia_Teknologi_files/4.jpg" alt="" class="img-fluid">
@@ -223,17 +205,17 @@ amet Lorem ipsum dolor sit amet</p>
               </div>
               <h2 class="title"><a href="#">Our Plan</a></h2>
               <p>
-                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
-Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor 
-sit amet Lorem ipsum dolor sit amet .
+                Expanding our network by prioritizing customer needs and
+ giving the best prices for IT consultation with with useful and 
+targeted solutions.
               </p>
             </div>
           </div>
 
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
             <div class="about-col">
               <div class="img">
-                <img src="ARAH_Akakia_Teknologi_files/3.jpg" alt="" class="img-fluid">
+                <img src="img/3.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Vision</a></h2>
@@ -257,43 +239,43 @@ sit amet Lorem ipsum dolor sit amet .
     <section id="services">
       <div class="container">
 
-        <header class="section-header wow fadeInUp" style="visibility: hidden; animation-name: none;">
+        <header class="section-header wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
           <h3>Services</h3>
-          <p> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  
-Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum 
-dolor sit amet .</p>
+          <p> We offer IT Consultation with continous maintenance with 
+best price and best offer so that long-term relationships with customers
+ are established</p>
         </header>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" style="visibility: hidden; animation-duration: 1.4s; animation-name: none;">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="#">Lorem Ipsum</a></h4>
+            <h4 class="title"><a href="#">Prsonalized Health Development</a></h4>
             <p class="description"> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" style="visibility: hidden; animation-duration: 1.4s; animation-name: none;">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+            <h4 class="title"><a href="#">Enterpreneurship Development</a></h4>
             <p class="description"> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" style="visibility: hidden; animation-duration: 1.4s; animation-name: none;">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
             <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+            <h4 class="title"><a href="#">Strategic cooperation</a></h4>
             <p class="description"> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: hidden; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: none;">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+            <h4 class="title"><a href="#">Big Data Analtics</a></h4>
             <p class="description"> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: hidden; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: none;">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+            <h4 class="title"><a href="#">System Planning</a></h4>
             <p class="description"> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: hidden; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: none;">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
             <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+            <h4 class="title"><a href="#">Machine Learning</a></h4>
             <p class="description"> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </p>
           </div>
 
@@ -320,25 +302,25 @@ dolor sit amet .</p>
         <div class="skills-content">
 
           <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
               <span class="skill">Lorem <i class="val">100%</i></span>
             </div>
           </div>
 
           <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
               <span class="skill">Ipsum <i class="val">85%</i></span>
             </div>
           </div>
 
           <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
               <span class="skill">Dolor <i class="val">80%</i></span>
             </div>
           </div>
 
           <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
               <span class="skill">Amet <i class="val">70%</i></span>
             </div>
           </div>
@@ -356,7 +338,7 @@ dolor sit amet .</p>
     <!--==========================
       Testimonial Section
     ============================-->
-    <section id="testimonials" class="section-bg wow fadeInUp" style="visibility: hidden; animation-name: none;">
+    <section id="testimonials" class="section-bg wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
       <div class="container">
 
         <header class="section-header">
@@ -375,7 +357,7 @@ dolor sit amet .</p>
 
           
 
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-7770px, 0px, 0px); transition: all 0.25s ease 0s; width: 12210px;"><div class="owl-item cloned" style="width: 1110px;"><div class="testimonial-item">
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-5550px, 0px, 0px); transition: all 0.25s ease 0s; width: 12210px;"><div class="owl-item cloned" style="width: 1110px;"><div class="testimonial-item">
             <img src="ARAH_Akakia_Teknologi_files/user.jpg" class="testimonial-img" alt="">
             <h3>Mister</h3>
             <h4>IT Service</h4>
@@ -509,16 +491,16 @@ sit amet
     ============================-->
     <section id="team">
       <div class="container">
-        <div class="section-header wow fadeInUp" style="visibility: hidden; animation-name: none;">
+        <div class="section-header wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
           <h3>Team</h3>
           <p></p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-2 col-md-6 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+          <div class="col-lg-2 col-md-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
             <div class="member">
-              <img src="ARAH_Akakia_Teknologi_files/user.jpg" class="img-fluid" alt="">
+              <img src="img/1517516509813.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Anji Halim</h4>
@@ -527,79 +509,79 @@ sit amet
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
                     <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/anji-halim-64605171/"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
             <div class="member">
-              <img src="ARAH_Akakia_Teknologi_files/user.jpg" class="img-fluid" alt="">
+              <img src="img/Picture2.png" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Hendy Risdianto</h4>
+                  <h4>Hendy Risdianto M.T.</h4>
                   <span>Direktur Utama</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
                     <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/hendy-risdianto-wijaya-020756107/"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
             <div class="member">
-              <img src="ARAH_Akakia_Teknologi_files/user.jpg" class="img-fluid" alt="">
+              <img src="img/Picture1.png" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Ahmad Arif</h4>
                   <span>Direktur Operasional</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/riparip"><i class="fa fa-facebook"></i></a>
                     <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmad-arif-2697b52b/"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
             <div class="member">
-              <img src="ARAH_Akakia_Teknologi_files/user.jpg" class="img-fluid" alt="">
+              <img src="img/IMG-20170324-WA0003.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Reynaldi</h4>
+                  <h4>Reynaldi S.Kom. B.Eng M.M.</h4>
                   <span>Direktur Marketing</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/adlypentium"><i class="fa fa-twitter"></i></a>
+                    <a href="http://localhost:8000/facebook.com/reynaldi.somantri"><i class="fa fa-facebook"></i></a>
                     <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/reynaldi-somantri-295510a6/"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+          <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
             <div class="member">
-              <img src="ARAH_Akakia_Teknologi_files/user.jpg" class="img-fluid" alt="">
+              <img src="img/1516674600275.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Rauzan Fikri</h4>
                   <span>Direktur Teknis</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/VikriOZAN"><i class="fa fa-facebook"></i></a>
                     <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/rfi/"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -617,7 +599,7 @@ sit amet
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact" class="section-bg wow fadeInUp" style="visibility: hidden; animation-name: none;">
+    <section id="contact" class="section-bg wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
       <div class="container">
 
         <div class="section-header">
@@ -696,7 +678,7 @@ sit amet
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <img src="ARAH_Akakia_Teknologi_files/Logo_AAT_footer.png" class="footer-logo-img" alt="">
+            <img src="img/logo-aat-footer.png" class="footer-logo-img" alt="">
             <p></p>
           </div>
 
@@ -706,8 +688,9 @@ sit amet
               <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Home</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#about">About us</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#services">Services</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#skills">Skills</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#testimonials">Testimonials</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#team">Team</a></li>
             </ul>
           </div>
 
@@ -752,7 +735,7 @@ sit amet
   </footer>
   <!-- Footer Section End -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
  
 
   <!-- JavaScript Libraries -->
@@ -770,7 +753,7 @@ sit amet
   <script src="ARAH_Akakia_Teknologi_files/lightbox.js"></script>
   <script src="ARAH_Akakia_Teknologi_files/jquery_002.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="ARAH_Akakia_Teknologi_files/contactform.html"></script>
+  <script src="ARAH_Akakia_Teknologi_files/contactform.htm"></script>
 
   <!-- Template Main Javascript File -->
   <script src="ARAH_Akakia_Teknologi_files/main.js"></script><nav id="mobile-nav">
@@ -778,8 +761,10 @@ sit amet
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a>
-          </li><li><a href="#contact">Contact Us</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Terstimonials</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><div id="mobile-body-overly"></div>
 
